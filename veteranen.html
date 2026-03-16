@@ -1,0 +1,287 @@
+---
+---
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comité Veteranen Soest & Soesterberg</title>
+    <style>
+        /* Basis instellingen - Schoon & Licht */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #fcfcfc;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* --- DESKTOP MENU --- */
+        nav {
+            width: 250px;
+            height: 100vh;
+            background-color: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 50px;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            margin-top: 30px; 
+        }
+
+        .nav-links a {
+            display: block;
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            margin-bottom: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #e8f5e9;
+            color: #1e5631;
+            border-radius: 0 25px 25px 0;
+            padding-left: 30px;
+        }
+
+        /* --- DESKTOP INHOUD --- */
+        main {
+            margin-left: 250px;
+            padding: 0 60px;
+            flex: 1;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding: 40px 0;
+        }
+
+        section p {
+            max-width: 750px;
+            line-height: 1.7;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            color: #1e5631;
+            font-size: 2.8em;
+            margin-top: 0;
+        }
+
+        h2.section-title {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2.section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #4CAF50;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: #1e5631;
+        }
+
+        .highlight {
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin: 25px 0;
+            border-radius: 8px;
+            max-width: 800px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1e5631;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #4CAF50;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            line-height: 1.8;
+            margin: 10px auto;
+        }
+
+        /* =========================================
+           MOBIELE WEERGAVE (Schermen tot 768px breed)
+           ========================================= */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                height: auto;
+                position: sticky;
+                top: 0;
+                padding: 15px 0;
+                background-color: #fcfcfc;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+
+            .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+                padding: 0 10px;
+                margin-top: 0;
+            }
+
+            .nav-links a {
+                padding: 8px 15px;
+                background-color: #e8f5e9;
+                border-radius: 20px;
+                font-size: 0.9em;
+                margin-bottom: 0;
+            }
+
+            .nav-links a:hover {
+                padding-left: 15px;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 0 20px;
+            }
+
+            section {
+                min-height: auto;
+                padding: 100px 0 60px 0;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .highlight {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#welkom">Welkom</a>
+            <a href="#missie">Onze Missie</a>
+            <a href="#agenda">Agenda & Activiteiten</a>
+            <a href="#blog">Laatste Nieuws</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="welkom">
+            <h1>Welkom Veteranen Soest & Soesterberg</h1>
+            <p>Hoewel onze prachtige gemeente een aanzienlijk aantal veteranen telt, ontbrak het ons tot voor kort aan een lokaal veteranencomité. Daarom hebben we de handen ineengeslagen.</p>
+            <p>Dit comité is opgericht voor ú: een centrale plek waar erkenning, herkenning, waardering en kameraadschap centraal staan. Of u nu net terug bent van een missie of uw diensttijd er al jaren op zit, we nodigen u van harte uit om de verbinding met elkaar aan te gaan. Voel u welkom!</p>
+        </section>
+
+        <section id="missie">
+            <h2 class="section-title">Onze Missie</h2>
+            <div class="highlight">
+                <p style="font-size: 1.3em; line-height: 1.6; margin: 0; font-style: italic; color: #1e5631;">
+                    "Het bevorderen van verbinding, erkenning, herkenning en waardering voor en door veteranen uit Soest en Soesterberg."
+                </p>
+            </div>
+            <p>Het comité wil graag met u in contact komen om te horen wat uw behoeften en ideeën zijn, zodat wij op basis daarvan een mooi programma kunnen opstellen voor de veteranen in onze gemeente.</p>
+        </section>
+
+        <section id="agenda">
+            <h2 class="section-title">Agenda & Activiteiten</h2>
+            <p>Wij organiseren en bezoeken diverse evenementen. Denk hierbij aan het georganiseerd bijwonen van herdenkingen en onze lokale veteranendag.</p>
+            
+            <div class="highlight">
+                <h3>Aankomende Evenementen:</h3>
+                <ul>
+                    <li><strong>Woensdag 25 maart 2026:</strong> Kennismakingsavond (19:30 - 21:30 uur) in het Gemeentehuis.</li>
+                    <li><strong>Zaterdag 19 september 2026:</strong> Lokale Veteranendag Soest, Soesterberg & Baarn (in de Rank).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2 class="section-title">Laatste Nieuws</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 900px; margin: 0 auto;">
+                
+                {% for post in site.posts limit:3 %}
+                <div class="highlight" style="width: 250px; text-align: left; padding: 20px; margin: 0;">
+                    <p style="color: #4CAF50; font-size: 0.8em; margin-top: 0; font-weight: bold;">
+                        {{ post.date | date: "%d-%m-%Y" }}
+                    </p>
+                    <h3 style="font-size: 1.2em; margin-top: 5px;">
+                        <a href="{{ post.url }}" style="color: #1e5631; text-decoration: none;">{{ post.title }}</a>
+                    </h3>
+                    <p style="font-size: 0.9em; line-height: 1.5;">
+                        {{ post.excerpt | strip_html | truncatewords: 20 }}
+                    </p>
+                    <a href="{{ post.url }}" style="color: #e67e22; font-weight: bold; text-decoration: none; font-size: 0.9em;">Lees verder →</a>
+                </div>
+                {% else %}
+                <p>Er zijn momenteel nog geen nieuwsberichten.</p>
+                {% endfor %}
+
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="{{ '/feed.xml' | relative_url }}" class="btn" style="background-color: #e67e22; border-radius: 5px;">
+                    Abonneer via RSS
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact & Handige Links</h2>
+            <p>Wilt u zich aanmelden voor een bijeenkomst of heeft u vragen? Neem contact met ons op.</p>
+            
+            <p><strong>E-mail:</strong> <br> <a href="mailto:info@veteranensoestsoesterberg.nl" style="color: #1e5631; font-weight: bold; font-size: 1.2em; text-decoration: none;">info@veteranensoestsoesterberg.nl</a></p>
+            
+            <div style="margin-top: 40px;">
+                <h3>Lokale Verbinding</h3>
+                <p>Bezoek ook de website van de gemeente Soest voor algemene lokale informatie:</p>
+                <a href="https://www.soest.nl" target="_blank" class="btn">Website Gemeente Soest</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
