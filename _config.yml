@@ -1,0 +1,7 @@
+title: Comité Veteranen Soest & Soesterberg
+description: "Het bevorderen van verbinding, erkenning, herkenning en waardering voor en door veteranen uit Soest en Soesterberg."
+url: "https://www.veteranensoestsoesterberg.nl" 
+
+# Dit is de magie die automatisch de RSS feed aanmaakt
+plugins:
+  - jekyll-feed
